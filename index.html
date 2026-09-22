@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá MUSE — góc nhỏ dành cho phụ kiện tóc, trang sức và những món đồ làm đẹp xinh xắn. Bộ sưu tập 10 phụ kiện cho mỗi ngày thêm rạng rỡ.">
+  <meta name="theme-color" content="#783d46">
+  <title>MUSE — Một chút xinh, một chút riêng</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 9C5-2 0 8 9 12-2 19 8 24 12 15c7 11 12 1 3-3 11-7 1-12-3-3Z"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C7 2 2 9 6 16s15 3 14-13ZM5 21 16 9"/></symbol>
+  </svg>
+
+  <div class="announcement">Những điều nhỏ xinh, dành riêng cho bạn <span>✧</span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="MUSE — Trang chủ">muse<span class="brand-star">✳</span><small>BEAUTY & ACCESSORIES</small></a>
+      <nav id="navigation" class="navigation" aria-label="Điều hướng chính">
+        <a class="active" href="#san-pham">Bộ sưu tập</a>
+        <a href="#ve-muse">Về MUSE</a>
+        <a href="#goc-nho">Góc nhỏ làm đẹp</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button" href="#tim-kiem" aria-label="Tìm sản phẩm"><svg><use href="#i-search"/></svg></a>
+        <button class="icon-button favorites-toggle" id="favorites-toggle" type="button" aria-label="Xem sản phẩm yêu thích" aria-pressed="false"><svg><use href="#i-heart"/></svg><span id="favorite-count" class="favorite-count">0</span></button>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navigation"><svg><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="tiny-line"></span> THE EVERYDAY MUSE</span>
+        <h1 id="hero-title">Một chút xinh,<br>một chút <em>riêng.</em></h1>
+        <p>Đôi khi, chỉ một món phụ kiện nhỏ cũng đủ<br class="desktop-break"> khiến ngày của bạn trở nên đặc biệt.</p>
+        <a class="button button-primary" href="#san-pham">Khám phá bộ sưu tập <svg><use href="#i-arrow"/></svg></a>
+        <div class="hero-caption"><svg><use href="#i-flower"/></svg><span>Nhỏ xinh trong từng chi tiết. Là bạn trong từng lựa chọn.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero.png" alt="Phụ kiện ngọc trai, kẹp tóc và nơ lụa trên nền satin hồng phấn" width="1536" height="1024" fetchpriority="high">
+        <span class="photo-label">THE LITTLE THINGS COLLECTION / 01</span>
+        <div class="hero-seal"><svg><use href="#i-flower"/></svg><span>made for<br><em>your everyday</em></span></div>
+        <span class="photo-bottom">A LITTLE DETAIL. A LOVELY DAY.</span>
+      </div>
+    </section>
+
+    <div class="values-strip">
+      <div><svg><use href="#i-flower"/></svg><span>Nhẹ nhàng mà nổi bật</span></div>
+      <span class="strip-dot">•</span>
+      <div><svg><use href="#i-heart"/></svg><span>Chút yêu thương cho chính mình</span></div>
+      <span class="strip-dot">•</span>
+      <div><svg><use href="#i-spark"/></svg><span>Xinh xắn mỗi ngày</span></div>
+    </div>
+
+    <section id="san-pham" class="collection container" aria-labelledby="collection-title">
+      <div class="section-heading">
+        <div><span class="eyebrow">CURATED WITH LOVE</span><h2 id="collection-title">Tìm một món <em>thật bạn.</em></h2></div>
+        <p>10 món phụ kiện nhỏ.<br>Thật nhiều cách để tỏa sáng.</p>
+      </div>
+      <div class="collection-toolbar">
+        <div class="category-filters" role="group" aria-label="Lọc theo danh mục">
+          <button class="filter active" data-category="all" aria-pressed="true">Tất cả <span>10</span></button>
+          <button class="filter" data-category="hair" aria-pressed="false">Phụ kiện tóc <span>3</span></button>
+          <button class="filter" data-category="jewelry" aria-pressed="false">Trang sức <span>3</span></button>
+          <button class="filter" data-category="beauty" aria-pressed="false">Dụng cụ làm đẹp <span>3</span></button>
+          <button class="filter" data-category="bags" aria-pressed="false">Túi mỹ phẩm <span>1</span></button>
+        </div>
+        <div class="search-sort">
+          <div class="search-field"><svg><use href="#i-search"/></svg><input id="tim-kiem" type="search" placeholder="Tìm món đồ bạn thích…" aria-label="Tìm tên sản phẩm"></div>
+          <label class="sort-field"><span>Sắp xếp:</span><select id="sort"><option value="default">Đề xuất</option><option value="price-asc">Giá tăng dần</option><option value="price-desc">Giá giảm dần</option><option value="name">Tên A → Z</option></select></label>
+        </div>
+      </div>
+      <div class="results-line"><span id="result-count" aria-live="polite">10 sản phẩm trong bộ sưu tập</span><button id="reset-filters" class="text-button" hidden>Xóa bộ lọc <span aria-hidden="true">×</span></button><span class="price-note">Giá hiển thị là giá tham khảo</span></div>
+      <div id="product-grid" class="product-grid"></div>
+      <div id="empty-state" class="empty-state" hidden><svg><use href="#i-flower"/></svg><h3>Chưa tìm thấy món đồ phù hợp</h3><p>Thử một từ khóa khác hoặc khám phá lại toàn bộ bộ sưu tập nhé.</p><button id="show-all" class="button button-primary">Xem tất cả sản phẩm <svg><use href="#i-arrow"/></svg></button></div>
+      <noscript><p>Vui lòng bật JavaScript để xem 10 sản phẩm, giá và thông tin chi tiết. Website không yêu cầu tài khoản.</p></noscript>
+      <div class="collection-footnote"><span class="small-star">✳</span> Một chi tiết nhỏ. Một phiên bản rạng rỡ hơn của bạn.</div>
+    </section>
+
+    <section id="ve-muse" class="about-section" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-photo"><img src="assets/hero.png" alt="Góc phụ kiện MUSE với sắc kem, hồng phấn và ánh vàng" width="1536" height="1024" loading="lazy"><span class="photo-note">little things, lovely feelings.</span></div>
+        <div class="about-copy"><span class="eyebrow">CÂU CHUYỆN CỦA MUSE</span><h2 id="about-title">Vẻ đẹp bắt đầu từ<br>những điều <em>nhỏ xinh.</em></h2><p>MUSE là góc nhỏ dành cho những cô gái yêu vẻ đẹp nhẹ nhàng và muốn thể hiện cá tính qua từng chi tiết. Một chiếc nơ mềm, đôi khuyên thanh lịch hay chiếc túi đựng cả thế giới làm đẹp — mỗi món đồ đều có câu chuyện của riêng mình.</p><p>Bộ sưu tập hướng đến những phụ kiện dễ phối, màu sắc dịu dàng và cảm hứng sử dụng mỗi ngày. MUSE mong bạn tìm được một món đồ khiến mình mỉm cười.</p><div class="about-signature">With love, <span>muse ✳</span></div></div>
+      </div>
+    </section>
+
+    <section id="goc-nho" class="care-section container" aria-labelledby="care-title">
+      <div class="section-heading"><div><span class="eyebrow">A LITTLE CARE GOES A LONG WAY</span><h2 id="care-title">Giữ những điều xinh, <em>thật lâu.</em></h2></div><p>Một vài mẹo nhỏ<br>cho phụ kiện luôn như mới.</p></div>
+      <div class="care-grid">
+        <article class="care-card"><div class="care-top"><span>01</span><svg><use href="#i-spark"/></svg></div><h3>Nâng niu trang sức</h3><p>Lau nhẹ bằng khăn mềm sau khi sử dụng. Cất riêng từng món ở nơi khô ráo, tránh tiếp xúc trực tiếp với nước hoa và chất tẩy rửa.</p><span class="care-tag">TRANG SỨC</span></article>
+        <article class="care-card"><div class="care-top"><span>02</span><svg><use href="#i-flower"/></svg></div><h3>Chăm chút nơ và lụa</h3><p>Giặt nhẹ bằng tay với nước mát và xà phòng dịu nhẹ. Không vắt xoắn mạnh; để khô tự nhiên trong bóng râm để giữ phom và màu sắc.</p><span class="care-tag">PHỤ KIỆN TÓC</span></article>
+        <article class="care-card"><div class="care-top"><span>03</span><svg><use href="#i-leaf"/></svg></div><h3>Làm sạch góc làm đẹp</h3><p>Vệ sinh cọ và mút định kỳ, rửa sạch cặn mỹ phẩm rồi để khô hoàn toàn ở nơi thoáng khí. Giữ túi đựng sạch và khô trước khi cất đồ.</p><span class="care-tag">DỤNG CỤ LÀM ĐẸP</span></article>
+      </div>
+    </section>
+
+    <section class="closing-note"><svg><use href="#i-flower"/></svg><p>Bạn không cần một dịp đặc biệt<br>để <em>yêu chiều bản thân.</em></p><a href="#san-pham" class="text-link">Tìm món nhỏ xinh của bạn <svg><use href="#i-arrow"/></svg></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><a class="brand footer-brand" href="#">muse<span class="brand-star">✳</span><small>BEAUTY & ACCESSORIES</small></a><p>Một chút xinh, một chút riêng.<br>Phụ kiện cho những ngày thật là bạn.</p><div class="footer-links"><a href="#san-pham">Bộ sưu tập</a><a href="#ve-muse">Về MUSE</a><a href="#goc-nho">Bảo quản phụ kiện</a></div><div class="footer-domain"><span>GÓC NHỎ CỦA CHÚNG MÌNH</span><span>Số 1 Đại Cồ Việt - Hà Nội<span aria-hidden="true">↗</span></span></div></div><div class="container footer-bottom"><span>© 2026 MUSE. Website trưng bày phụ kiện.</span><span>Sản phẩm, giá và ảnh minh họa phục vụ bài tập.</span><a href="#">Về đầu trang ↑</a></div></footer>
+
+  <dialog id="product-dialog" aria-labelledby="detail-name"><button class="icon-button dialog-close" id="close-dialog" aria-label="Đóng chi tiết sản phẩm"><svg><use href="#i-close"/></svg></button><div class="detail-layout"><div class="detail-image"><img id="detail-image" src="assets/hair.png" alt="" width="1024" height="1024"></div><div class="detail-copy"><span id="detail-category" class="eyebrow"></span><h2 id="detail-name"></h2><p id="detail-price" class="detail-price"></p><p id="detail-description"></p><dl class="detail-specs"><div><dt>Chất liệu</dt><dd id="detail-material"></dd></div><div><dt>Màu sắc</dt><dd id="detail-color"></dd></div><div><dt>Mã sản phẩm</dt><dd id="detail-code"></dd></div></dl><div class="detail-care"><strong>Một chút nâng niu</strong><p id="detail-care"></p></div><button id="detail-favorite" class="button button-primary"><svg><use href="#i-heart"/></svg><span>Lưu vào yêu thích</span></button><small class="detail-note">Đây là bộ sưu tập trưng bày. Giá tham khảo; chưa hỗ trợ đặt hàng và thanh toán.</small></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
